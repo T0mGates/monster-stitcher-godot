@@ -1,0 +1,75 @@
+[gd_scene format=3 uid="uid://gtbgu1gia3x2"]
+
+[ext_resource type="Texture2D" uid="uid://d3lnpofqxdmwp" path="res://art/grasshopperTorso.png" id="1_r5trr"]
+[ext_resource type="Texture2D" uid="uid://dyl52y5n2tadd" path="res://art/icon.svg" id="2_f6hbu"]
+[ext_resource type="Script" uid="uid://yrgcld05q7vy" path="res://scenes/utils/Socket.gd" id="3_pgi7f"]
+
+[node name="Grasshopper" type="Node2D" unique_id=56948457]
+
+[node name="Torso" type="Sprite2D" parent="." unique_id=544943126]
+texture = ExtResource("1_r5trr")
+
+[node name="HeadSocket" type="Sprite2D" parent="." unique_id=1973558632]
+modulate = Color(1, 0.7, 0.7, 0.85)
+position = Vector2(0, -75.99999)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_f6hbu")
+script = ExtResource("3_pgi7f")
+allowed_slots = Array[int]([0])
+
+[node name="LeftArmSocket" type="Sprite2D" parent="." unique_id=1108069441]
+modulate = Color(1, 1, 0.6, 0.85)
+position = Vector2(-34.999996, -43.00001)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_f6hbu")
+script = ExtResource("3_pgi7f")
+allowed_slots = Array[int]([2])
+socket_id = 1
+flip_sprite = true
+
+[node name="RightArmSocket" type="Sprite2D" parent="." unique_id=910328347]
+modulate = Color(1, 1, 0.6, 0.85)
+position = Vector2(35, -43)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_f6hbu")
+script = ExtResource("3_pgi7f")
+allowed_slots = Array[int]([2])
+socket_id = 2
+
+[node name="LeftLegSocket" type="Sprite2D" parent="." unique_id=1814987042]
+modulate = Color(1, 1, 0.6, 0.85)
+position = Vector2(-28.000004, 31.999996)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_f6hbu")
+script = ExtResource("3_pgi7f")
+allowed_slots = Array[int]([2])
+socket_id = 3
+flip_sprite = true
+
+[node name="RightLegSocket" type="Sprite2D" parent="." unique_id=1335873897]
+modulate = Color(1, 1, 0.6, 0.85)
+position = Vector2(32.99999, 32.999996)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_f6hbu")
+script = ExtResource("3_pgi7f")
+allowed_slots = Array[int]([2])
+socket_id = 4
+
+[node name="RightLegSocket2" type="Sprite2D" parent="." unique_id=317249564]
+modulate = Color(1, 1, 0.6, 0.85)
+position = Vector2(-34.99999, -7.9999924)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_f6hbu")
+script = ExtResource("3_pgi7f")
+allowed_slots = Array[int]([2])
+socket_id = 5
+flip_sprite = true
+
+[node name="RightLegSocket3" type="Sprite2D" parent="." unique_id=1187944648]
+modulate = Color(1, 1, 0.6, 0.85)
+position = Vector2(36, -7.9999924)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_f6hbu")
+script = ExtResource("3_pgi7f")
+allowed_slots = Array[int]([2])
+socket_id = 6

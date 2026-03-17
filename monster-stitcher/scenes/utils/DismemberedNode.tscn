@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://b2hqxathysc76"]
+
+[ext_resource type="Script" uid="uid://htl3h355rfh" path="res://scenes/utils/DismemberedNode.gd" id="1_xkunx"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xkunx"]
+
+[node name="DismemberedNode" type="RigidBody2D" unique_id=1631196034]
+script = ExtResource("1_xkunx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=976879372]
+shape = SubResource("CapsuleShape2D_xkunx")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2081829456]

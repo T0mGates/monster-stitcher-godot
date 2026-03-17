@@ -1,0 +1,31 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="MonsterStitcher"
+run/main_scene="uid://d0itjp0yfkumn"
+config/features=PackedStringArray("4.6", "Forward Plus")
+config/icon="res://art/icon.svg"
+
+[autoload]
+
+PartsData="*uid://csatstkqsthfb"
+BattleManager="*uid://bnn8lsraglhpn"
+ActiveMonsters="*uid://0cwuxgh6r6aj"
+InputValidator="*uid://b1mvxug2saahh"
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"

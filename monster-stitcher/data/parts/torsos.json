@@ -1,0 +1,6 @@
+{
+    "grasshopper": {
+        "spritePath": "res://art/grasshopperTorso.png",
+        "socketOffset": [0, 0]
+    }
+}

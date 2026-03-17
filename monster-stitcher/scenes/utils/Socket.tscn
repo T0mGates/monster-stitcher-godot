@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cg26fsr7gpy8m"]
+
+[ext_resource type="Script" uid="uid://yrgcld05q7vy" path="res://scenes/utils/Socket.gd" id="1_uh4k3"]
+[ext_resource type="Texture2D" uid="uid://dyl52y5n2tadd" path="res://art/icon.svg" id="2_uh4k3"]
+
+[node name="Socket" type="Sprite2D" unique_id=1729783779]
+modulate = Color(1, 1, 1, 0.85)
+script = ExtResource("1_uh4k3")
+
+[node name="Sprites" type="Node2D" parent="." unique_id=687796846]
+
+[node name="SocketSprite" type="Sprite2D" parent="Sprites" unique_id=1661413992]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_uh4k3")
+
+[node name="BodypartSprite" type="Sprite2D" parent="Sprites" unique_id=238467433]

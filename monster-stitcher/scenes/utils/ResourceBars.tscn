@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://jagw20yi8b71"]
+
+[ext_resource type="Script" uid="uid://brgufw8pwevt2" path="res://scenes/utils/ResourceBars.gd" id="1_m0ofj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nu6ip"]
+bg_color = Color(0.6054333, 0.5978759, 5.7756904e-07, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qlffg"]
+bg_color = Color(4.813075e-06, 0.65792274, 0.8553643, 1)
+
+[node name="ResourceBars" type="Node2D" unique_id=1202618169]
+script = ExtResource("1_m0ofj")
+
+[node name="SpeedBar" type="Node2D" parent="." unique_id=591102337]
+position = Vector2(0, 40)
+
+[node name="ProgressBar" type="ProgressBar" parent="SpeedBar" unique_id=1143199279]
+offset_right = 80.0
+offset_bottom = 15.0
+theme_override_styles/fill = SubResource("StyleBoxFlat_nu6ip")
+step = 1.0
+value = 25.0
+show_percentage = false
+
+[node name="EnergyBar" type="Node2D" parent="." unique_id=172841989]
+position = Vector2(0, 25)
+
+[node name="Label" type="RichTextLabel" parent="EnergyBar" unique_id=1136876147]
+offset_left = -28.0
+offset_top = -25.0
+offset_right = 107.0
+offset_bottom = -5.0
+theme_override_font_sizes/normal_font_size = 12
+text = "Energy: 20 / 30"
+scroll_active = false
+horizontal_alignment = 1
+
+[node name="ProgressBar" type="ProgressBar" parent="EnergyBar" unique_id=1743797079]
+offset_top = -6.0
+offset_right = 80.0
+offset_bottom = 9.0
+theme_override_styles/fill = SubResource("StyleBoxFlat_qlffg")
+step = 1.0
+value = 25.0
+show_percentage = false
