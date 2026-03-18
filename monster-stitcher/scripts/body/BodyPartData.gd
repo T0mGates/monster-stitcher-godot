@@ -59,8 +59,7 @@ func _init(
 	origin_monster_param	: PartsData.Monster,
 	move_param				: MoveData,
 	max_hp_param			: int,
-	stats_param				: Dictionary[Enums.Stat, int],
-	socket_id_param			: int
+	stats_param				: Dictionary[Enums.Stat, int]
 ) -> void:
 
 	part_name 				= name_param
@@ -68,7 +67,6 @@ func _init(
 	type 					= type_param
 	max_hp 					= max_hp_param
 	origin_monster_type 	= origin_monster_param
-	socket_id 				= socket_id_param
 	move 					= move_param
 
 	for stat in Enums.Stat.values():

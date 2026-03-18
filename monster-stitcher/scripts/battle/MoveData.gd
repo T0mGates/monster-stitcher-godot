@@ -17,9 +17,6 @@ var user_row_pos_req	: Array[Enums.RowPosition]		= [Enums.RowPosition.BACK, Enum
 ## ctx.damage_dealt / ctx.was_crit carry forward between effects
 var effects				: Array[MoveEffect] 			= []
 
-var user_animation		: Enums.ClipRole
-var target_animation	: Enums.ClipRole
-
 func _init(
 	name_param					: String,
 	description_param			: String,
@@ -28,9 +25,7 @@ func _init(
 	target_mode_param			: Enums.TargetMode,
 	effects_param				: Array[MoveEffect],
 	target_row_pos_req_param	: Array[Enums.RowPosition],
-	user_row_pos_req_param		: Array[Enums.RowPosition],
-	user_animation_param		: Enums.ClipRole,
-	target_animation_param		: Enums.ClipRole
+	user_row_pos_req_param		: Array[Enums.RowPosition]
 ) -> void:
 
 	move_name 			= name_param
@@ -41,8 +36,6 @@ func _init(
 	effects 			= effects_param
 	target_row_pos_req 	= target_row_pos_req_param
 	user_row_pos_req 	= user_row_pos_req_param
-	user_animation		= user_animation_param
-	target_animation	= target_animation_param
 
 func is_heal_move() -> bool:
 	for e in effects:

@@ -17,36 +17,38 @@ position = Vector2(-40, -230)
 [node name="Sockets" type="Node2D" parent="." unique_id=1040833938]
 
 [node name="Torso" parent="Sockets" unique_id=508996407 instance=ExtResource("3_pojfv")]
+modulate = Color(0.7, 0.7, 1, 0.85)
 texture = ExtResource("1_glgvb")
+allowed_slots = Array[int]([3])
 
-[node name="Head" parent="Sockets" unique_id=1729783779 instance=ExtResource("3_pojfv")]
+[node name="Head" parent="Sockets/Torso" unique_id=1729783779 instance=ExtResource("3_pojfv")]
+modulate = Color(1, 0.7, 0.7, 0.85)
 position = Vector2(1, -68)
 texture = ExtResource("5_7e8lm")
-socket_id = 1
-parent_socket_id = 0
+allowed_slots = Array[int]([0])
 
-[node name="LeftArm" parent="Sockets" unique_id=1153546084 instance=ExtResource("3_pojfv")]
+[node name="LeftArm" parent="Sockets/Torso" unique_id=1153546084 instance=ExtResource("3_pojfv")]
+modulate = Color(0.7, 1, 0.7, 0.85)
 position = Vector2(-36, -40)
 texture = ExtResource("6_1mgre")
-socket_id = 2
-parent_socket_id = 0
+allowed_slots = Array[int]([1])
 flip_sprite = true
 
-[node name="RightArm" parent="Sockets" unique_id=1030832651 instance=ExtResource("3_pojfv")]
+[node name="RightArm" parent="Sockets/Torso" unique_id=1030832651 instance=ExtResource("3_pojfv")]
+modulate = Color(0.7, 1, 0.7, 0.85)
 position = Vector2(36, -41)
 texture = ExtResource("6_1mgre")
-socket_id = 3
-parent_socket_id = 0
+allowed_slots = Array[int]([1])
 
-[node name="LeftLeg" parent="Sockets" unique_id=921864515 instance=ExtResource("3_pojfv")]
+[node name="LeftLeg" parent="Sockets/Torso" unique_id=921864515 instance=ExtResource("3_pojfv")]
+modulate = Color(1, 1, 0.6, 0.85)
 position = Vector2(-28, 32)
 texture = ExtResource("7_e546f")
-socket_id = 4
-parent_socket_id = 0
+allowed_slots = Array[int]([2])
 flip_sprite = true
 
-[node name="RightLeg" parent="Sockets" unique_id=762911929 instance=ExtResource("3_pojfv")]
+[node name="RightLeg" parent="Sockets/Torso" unique_id=762911929 instance=ExtResource("3_pojfv")]
+modulate = Color(1, 1, 0.6, 0.85)
 position = Vector2(35, 33)
 texture = ExtResource("7_e546f")
-socket_id = 5
-parent_socket_id = 0
+allowed_slots = Array[int]([2])

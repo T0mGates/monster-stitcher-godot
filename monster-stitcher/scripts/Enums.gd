@@ -205,27 +205,6 @@ static func get_conditional_description(cond: Conditional) -> String:
 	return ""
 
 # ══════════════════════════════════════════════════════════════════════════════
-# ANIMATION CLIP ROLES
-# ══════════════════════════════════════════════════════════════════════════════
-enum ClipRole {
-	IDLE, ATTACK, CAST,
-	HIT, HEAL, REST, DIE, BLOCK,
-}
-
-static func get_clip_role_key(r: ClipRole) -> String:
-	match r:
-		ClipRole.IDLE:        return "idle"
-		ClipRole.ATTACK:      return "attack"
-		ClipRole.CAST:        return "cast"
-		ClipRole.HIT:         return "hit"
-		ClipRole.HEAL:        return "heal"
-		ClipRole.REST:        return "rest"
-		ClipRole.DIE:         return "die"
-		ClipRole.BLOCK:       return "block"
-	return "idle"
-
-
-# ══════════════════════════════════════════════════════════════════════════════
 # TYPE SET BONUSES
 ## { PartType: { count_threshold: { stat_key: bonus } } }
 ## Edit here to tune or add new type synergies.
